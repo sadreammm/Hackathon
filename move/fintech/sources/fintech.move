@@ -99,8 +99,7 @@ module fintech::fintech {
         timestamp: u64,
         ctx: &mut TxContext
     ) {
-        assert!(clarity > 8 && plausibility > 8, 0);
-
+        
         let id = object::new(ctx);
         let nft_address = object::uid_to_address(&id);
         
